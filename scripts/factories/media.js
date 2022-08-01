@@ -4,7 +4,7 @@ import sliderFactory from './slider.js';
 
 export default function mediaFactory(media, name) {
   function createCard(data, container, sortMedia) {
-    const article = `<${data.elt._tag} src=${data.elt._path} role="Image link" aria-Label="${media.title}, vue de présentation" tabindex="0" class="media"></${data.elt._tag}>
+    const article = `<${data.elt._tag} src=${data.elt._path} role="Image link" aria-Label="${media.title}, vue de présentation" tabindex="0" class="media" alt="${media.title}"></${data.elt._tag}>
                     <aside class="media__aside">
                       <p class="media__title" >${media.title}</p>
                       <span class="media__likes" aria-label=${media.userLike ? 'enlever like' : 'ajouter like'} tabindex="0">
